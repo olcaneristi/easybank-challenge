@@ -69,10 +69,6 @@ button {
   background: linear-gradient(to right, #2cc455 20%, #2bb7da 100%);
   color: white;
 }
-.invitebtn:hover {
-  opacity: 80%;
-  transition: all 0.3s ease-in-out;
-}
 
 /* Home Component */
 
