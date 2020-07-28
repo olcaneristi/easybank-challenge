@@ -60,7 +60,6 @@ button {
 
 .invitebtn {
   border: 0px solid rgb(255, 255, 255);
-  background-color: white;
   padding: 10px;
   width: 180px;
   height: 50px;
@@ -71,7 +70,7 @@ button {
   color: white;
 }
 .invitebtn:hover {
-  opacity: 75%;
+  opacity: 80%;
   transition: all 0.3s ease-in-out;
 }
 
