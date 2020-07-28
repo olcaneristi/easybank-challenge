@@ -71,7 +71,7 @@ button {
   color: white;
 }
 .invitebtn:hover {
-  opacity: 80%;
+  opacity: 75%;
   transition: all 0.3s ease-in-out;
 }
 
