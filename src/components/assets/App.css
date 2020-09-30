@@ -24,6 +24,24 @@ header {
   z-index: 3;
 }
 
+header .sidebar-cta {
+  background: none;
+  border: none;
+  outline: none;
+  color: #313030;
+  font-size: 30px;
+  display: none;
+  z-index: 9999;
+}
+
+header a img {
+  display: flex;
+}
+
+header a {
+  z-index: 9999;
+}
+
 .header-li,
 .header-a,
 button {
@@ -40,6 +58,8 @@ button {
 
 .header-li {
   padding: 15px;
+  display: flex;
+  align-items: center;
 }
 .header-li a:hover {
   color: black;
@@ -255,9 +275,9 @@ h1 {
   text-align: center;
 }
 .footer-container {
-  margin: 0 166px 0 166px;
+  margin: 0 auto;
   padding: 50px 0 40px 0;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -311,4 +331,226 @@ a:hover {
 
 .footer-btn {
   align-items: flex-end;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero__description {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title__h1 {
+    width: 100%;
+  }
+
+  .hero {
+    padding-bottom: 3rem;
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  .article .container {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  .info .container {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  .info-desc {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 15px 2rem;
+  }
+
+  .hero__content {
+    flex-direction: column-reverse;
+  }
+  .hero__image {
+    background-size: 100% 100%;
+  }
+
+  .hero__description {
+    text-align: center;
+    max-width: 85%;
+    margin-bottom: 3rem;
+  }
+
+  .title__h1 {
+    font-size: 40px;
+  }
+
+  .copy {
+    padding-right: 0;
+  }
+
+  .invitebtn {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .hero__imageSrc {
+    width: 100%;
+    top: -15em;
+  }
+
+  .info .container h1,
+  .easy-p {
+    text-align: center;
+  }
+  .easy-p {
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: fixed;
+  }
+  header .invitebtn {
+    display: none;
+  }
+  header .sidebar-cta {
+    display: flex;
+  }
+
+  header .navbar-menu {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    transition: 850ms;
+    margin-top: 60px;
+    opacity: 0;
+  }
+  header .header-a {
+    font-size: 20px;
+    color: rgb(64, 64, 77);
+  }
+  header .active {
+    top: -0.5px;
+    transition: 350ms;
+    opacity: 1;
+  }
+
+  header .nav_links {
+    flex-direction: column;
+    margin: 40px 0;
+    align-items: center;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-item {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid-item img {
+    width: 22%;
+  }
+
+  .info-desc {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+
+  .info .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .info .container h1 {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .info .easy-p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .article {
+    padding-top: 0px;
+  }
+
+  .article .container {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+
+  .article-title {
+    text-align: center;
+  }
+
+  .grid-article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-item-article {
+    margin-bottom: 3rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-icons {
+    margin-bottom: 1rem;
+  }
+  .footer-icons a img {
+    width: 30px;
+  }
+  .footer-menu {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+  .footer-btn {
+    align-items: center;
+  }
+  .invitebtn {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__image {
+    background: url("./images/bg-intro-mobile.svg") no-repeat center;
+    background-size: 100% 100%;
+    height: 500px;
+  }
+  .hero__imageSrc {
+    top: -65px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero .hero__description {
+    margin-top: -50px;
+  }
+
+  .info .container {
+    margin-top: 50px;
+  }
 }
